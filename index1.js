@@ -251,7 +251,7 @@ depositbutton.addEventListener("click", function (e) {
   
   let p = new Date();
   original.movementsDates.push(p.toISOString());
-  depositamount.textContent="";
+  depositamount.value="";
   display(original);
   add(original);
   out(original);
