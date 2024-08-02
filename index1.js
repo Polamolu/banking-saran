@@ -244,6 +244,7 @@ depositbutton.addEventListener("click", function (e) {
     clearInterval(intervals);
     n = 200;
   }
+  timer();
   let amount = +depositamount.value;
   original.movements.push(amount);
   let p = new Date();
@@ -260,6 +261,7 @@ transferbtn.addEventListener("click", function (e) {
     clearInterval(intervals);
     n = 200;
   }
+  timer();
   let x = +transferamount.value;
   let y = transferto.value;
   let k = +labelBalance.textContent.slice(0, -1);
@@ -296,7 +298,7 @@ loanbtn.addEventListener("click", function (e) {
     n = 200;
   }
   timer();
-  intervals = setInterval(timer, 1000);
+  
   let x = +loanamount.value;
   let y = original.movements.some(function (val) {
     return val > x * 0.3;
@@ -318,6 +320,7 @@ loanbtn.addEventListener("click", function (e) {
 // close account option
 closebtn.addEventListener("click", function (e) {
   e.preventDefault();
+  
   let x = confirmuser.value;
   let y = +confirmpin.value;
   if (original.user === x && original.pin === y) {
