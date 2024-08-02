@@ -286,16 +286,23 @@ transferbtn.addEventListener("click", function (e) {
       add(original);
       out(original);
       finance(original);
+      transferamount.value="";
+      transferto.value="";
     } else if (x > k) {
       alert("insufficient balance");
+      transferamount.value="";
+      transferto.value="";
     } else {
       alert("please check the value");
+      transferamount.value="";
+      transferto.value="";
     }
   } else {
     alert("please check the credintials");
+    transferamount.value="";
+    transferto.value="";
   }
-  transferamount.value="";
-  transferto.value="";
+  
 });
 // loan button
 loanbtn.addEventListener("click", function (e) {
