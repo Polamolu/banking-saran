@@ -321,7 +321,10 @@ loanbtn.addEventListener("click", function (e) {
 // close account option
 closebtn.addEventListener("click", function (e) {
   e.preventDefault();
-  
+  if (intervals) {
+    clearInterval(intervals);
+    n = 200;
+  }
   let x = confirmuser.value;
   let y = +confirmpin.value;
   if (original.user === x && original.pin === y) {
