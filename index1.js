@@ -248,13 +248,15 @@ depositbutton.addEventListener("click", function (e) {
   intervals = setInterval(timer, 1000);
   let amount = +depositamount.value;
   original.movements.push(amount);
+  
   let p = new Date();
   original.movementsDates.push(p.toISOString());
+  depositamount.textContent="";
   display(original);
   add(original);
   out(original);
   finance(original);
-  depositamount.textContent="";
+  
 });
 //  tranfer button
 transferbtn.addEventListener("click", function (e) {
