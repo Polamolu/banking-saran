@@ -254,6 +254,7 @@ depositbutton.addEventListener("click", function (e) {
   add(original);
   out(original);
   finance(original);
+  depositamount.textContent="";
 });
 //  tranfer button
 transferbtn.addEventListener("click", function (e) {
@@ -291,6 +292,8 @@ transferbtn.addEventListener("click", function (e) {
   } else {
     alert("please check the credintials");
   }
+  transferamount.textContent="";
+  transferto.textContent="";
 });
 // loan button
 loanbtn.addEventListener("click", function (e) {
@@ -318,6 +321,7 @@ loanbtn.addEventListener("click", function (e) {
   } else {
     alert("you are not eligible for loan");
   }
+  loanamount.textContent="";
 });
 // close account option
 closebtn.addEventListener("click", function (e) {
