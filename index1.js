@@ -262,6 +262,7 @@ transferbtn.addEventListener("click", function (e) {
     n = 200;
   }
   timer();
+  intervals = setInterval(timer, 1000);
   let x = +transferamount.value;
   let y = transferto.value;
   let k = +labelBalance.textContent.slice(0, -1);
@@ -298,7 +299,7 @@ loanbtn.addEventListener("click", function (e) {
     n = 200;
   }
   timer();
-  
+  intervals = setInterval(timer, 1000);
   let x = +loanamount.value;
   let y = original.movements.some(function (val) {
     return val > x * 0.3;
