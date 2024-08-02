@@ -294,8 +294,8 @@ transferbtn.addEventListener("click", function (e) {
   } else {
     alert("please check the credintials");
   }
-  transferamount.textContent="";
-  transferto.textContent="";
+  transferamount.value="";
+  transferto.value="";
 });
 // loan button
 loanbtn.addEventListener("click", function (e) {
