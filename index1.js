@@ -177,7 +177,7 @@ let finance = function (acc) {
   labelBalance.textContent = resulting;
 };
 // timer
-let n = 10;
+let n = 200;
 let timer = function () {
   if (n >= 0) {
     console.log(n);
@@ -208,7 +208,7 @@ loginbtn.addEventListener("click", function (e) {
     // implementing timer
     if (intervals) {
       clearInterval(intervals);
-      n = 10;
+      n = 200;
     }
     timer();
     intervals = setInterval(timer, 1000);
@@ -240,7 +240,7 @@ depositbutton.addEventListener("click", function (e) {
   e.preventDefault();
   if (intervals) {
     clearInterval(intervals);
-    n = 10;
+    n = 200;
   }
   let amount = +depositamount.value;
   original.movements.push(amount);
@@ -256,7 +256,7 @@ transferbtn.addEventListener("click", function (e) {
   e.preventDefault();
   if (intervals) {
     clearInterval(intervals);
-    n = 10;
+    n = 200;
   }
   let x = +transferamount.value;
   let y = transferto.value;
@@ -291,7 +291,7 @@ loanbtn.addEventListener("click", function (e) {
   e.preventDefault();
   if (intervals) {
     clearInterval(intervals);
-    n = 10;
+    n = 200;
   }
   timer();
   intervals = setInterval(timer, 1000);
