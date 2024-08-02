@@ -244,7 +244,7 @@ depositbutton.addEventListener("click", function (e) {
     clearInterval(intervals);
     n = 200;
   }
-  timer();
+  intervals = setInterval(timer, 1000);
   let amount = +depositamount.value;
   original.movements.push(amount);
   let p = new Date();
