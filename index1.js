@@ -203,6 +203,8 @@ loginbtn.addEventListener("click", function (e) {
   let y = accounts.find(function (val) {
     return val.user === x && val.pin === +z;
   });
+  username.textContent="";
+  pin.textContent="";
   console.log(x, z, y);
   if (y) {
     // implementing timer
