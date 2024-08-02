@@ -302,6 +302,8 @@ transferbtn.addEventListener("click", function (e) {
     transferamount.value="";
     transferto.value="";
   }
+  transferto.value="";
+  transferamount.value="";
   
 });
 // loan button
