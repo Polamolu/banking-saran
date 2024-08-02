@@ -274,6 +274,8 @@ transferbtn.addEventListener("click", function (e) {
   let z = accounts.find(function (val) {
     return val.user == y;
   });
+  transferamount.value="";
+  transferto.value="";
   console.log(x, y, z);
   if (z) {
     if (x <= k) {
@@ -287,8 +289,7 @@ transferbtn.addEventListener("click", function (e) {
       add(original);
       out(original);
       finance(original);
-      transferamount.value="";
-      transferto.value="";
+      
     } else if (x > k) {
       alert("insufficient balance");
       transferamount.value="";
